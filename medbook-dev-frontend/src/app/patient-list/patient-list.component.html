@@ -1,0 +1,23 @@
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <!-- Add other table headers -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients">
+        <td>{{ patient.name }}</td>
+        <!-- Display other patient data in respective columns -->
+        <td>{{ patient.dateOfBirth | customDate }}</td>
+        
+
+      </tr>
+      
+      <tr *ngFor="let patient of patients" appHighlightRows>
+        <!-- ... -->
+      </tr>
+      
+    </tbody>
+  </table>
+  
