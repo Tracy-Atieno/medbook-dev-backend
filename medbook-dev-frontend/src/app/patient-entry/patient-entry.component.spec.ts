@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PatientEntryComponent {
   patientName: string = '';
-  // Add properties for other input fields
+  da: string = '';
+  
 }
