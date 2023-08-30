@@ -2,14 +2,20 @@
     <thead>
       <tr>
         <th>Name</th>
-        <!-- Add other table headers -->
+        <th>dateOfBirth</th>
+        <th>gender</th>
+        <th>service</th>
+        <th>comments</th>
+        
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let patient of patients">
         <td>{{ patient.name }}</td>
-        <!-- Display other patient data in respective columns -->
         <td>{{ patient.dateOfBirth | customDate }}</td>
+        <td>{{ patient.gender }}</td>
+        <td>{{ patient.service }}</td>
+        <td>{{ patient.comments }}</td>
         
 
       </tr>
